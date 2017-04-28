@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "589084157082",
+    "firebase_url": "https://android-fatihin-istanbulu.firebaseio.com",
+    "project_id": "android-fatihin-istanbulu",
+    "storage_bucket": "android-fatihin-istanbulu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589084157082:android:769361dceba0acc9",
+        "android_client_info": {
+          "package_name": "com.dnkilic.fatihinstanbulu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589084157082-i0am6enlcc32803u6v2ilej3hf3nau2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dnkilic.fatihinstanbulu",
+            "certificate_hash": "68b5f7fbe7ab19ff829f719395b21e693540271a"
+          }
+        },
+        {
+          "client_id": "589084157082-q68d5p1l9gt08iog6v5j2ff2ec8qphn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHTNs0_v6mcSdaF6ue4ke9fWpbXSFOmoU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589084157082-q68d5p1l9gt08iog6v5j2ff2ec8qphn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
