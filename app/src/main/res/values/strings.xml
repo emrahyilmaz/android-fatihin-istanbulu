@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Fatihin İstanbulu</string>
+    <string name="loginError1">Kullanıcı Bulunamadı Lütfen Kayıt Olun</string>
+    <string name="register">Kayıt</string>
 </resources>
