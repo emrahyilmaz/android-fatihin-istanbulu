@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ccc"
-    tools:context="com.dnkilic.fatihinstanbulu.loginProcess.Register">
+    tools:context="com.dnkilic.fatihinstanbulu.LoginProcess.Register">
 
     <ImageView
         android:id="@+id/SignUpImage"

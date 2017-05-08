@@ -18,8 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".DetailActivity" />
-        <activity android:name=".loginProcess.LoginActivity" />
-        <activity android:name=".loginProcess.Register"></activity>
+        <activity android:name=".LoginProcess.LoginActivity" />
+        <activity android:name=".LoginProcess.Register"></activity>
     </application>
 
 </manifest>

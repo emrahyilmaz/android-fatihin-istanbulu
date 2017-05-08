@@ -8,7 +8,7 @@ package com.dnkilic.fatihinstanbulu;
         import android.support.v7.widget.RecyclerView;
         import android.widget.Toast;
 
-        import com.dnkilic.fatihinstanbulu.loginProcess.LoginActivity;
+        import com.dnkilic.fatihinstanbulu.LoginProcess.LoginActivity;
         import com.dnkilic.fatihinstanbulu.network.GetPlacesTask;
         import com.dnkilic.fatihinstanbulu.network.PlaceResultListener;
         import com.google.firebase.auth.FirebaseAuth;
