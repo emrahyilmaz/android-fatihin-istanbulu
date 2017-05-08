@@ -1,4 +1,4 @@
-package com.dnkilic.fatihinstanbulu.loginProcess;
+package com.dnkilic.fatihinstanbulu.LoginProcess;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -35,9 +35,9 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        firebaseGiris=FirebaseAuth.getInstance();
-        firebaseDatabase= FirebaseDatabase.getInstance().getReference().child("Users");
 
+        firebaseDatabase= FirebaseDatabase.getInstance().getReference().child("Users");
+        firebaseGiris=FirebaseAuth.getInstance();
         isim= (EditText) findViewById(R.id.nameField);
         email= (EditText) findViewById(R.id.eMailField);
         sifre = (EditText) findViewById(R.id.passField);
@@ -59,7 +59,7 @@ public class Register extends AppCompatActivity {
         final String sifre=this.sifre.getText().toString().trim();
 
         if (!TextUtils.isEmpty(isim) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(sifre)){
-            firebaseGiris.createUserWithEmailAndPassword(email,sifre).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            firebaseGiris.createUserWithEmailAndPassword(email,sifre).addOnCompleteListener(this,new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
@@ -68,6 +68,8 @@ public class Register extends AppCompatActivity {
                         kullaniciDataid.child("isim").setValue(isim);
                         kullaniciDataid.child("email").setValue(email);
                         kullaniciDataid.child("sifre").setValue(sifre);
+
+
 
                         Intent yol=new Intent(Register.this, MainActivity.class);
                         yol.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

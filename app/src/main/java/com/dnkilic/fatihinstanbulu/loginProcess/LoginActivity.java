@@ -1,4 +1,4 @@
-package com.dnkilic.fatihinstanbulu.loginProcess;
+package com.dnkilic.fatihinstanbulu.LoginProcess;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -58,7 +58,7 @@ public class LoginActivity extends AppCompatActivity{
             mAuth.signInWithEmailAndPassword(email, sifre).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
-                    if (!task.isComplete()) {
+                    if (task.isComplete()) {
                         Snackbar.make(mMainLayout, R.string.loginError1, Snackbar.LENGTH_LONG)
                                 .setAction(R.string.register, new View.OnClickListener() {
                                     @Override
